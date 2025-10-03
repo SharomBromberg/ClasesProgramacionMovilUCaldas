@@ -1,4 +1,5 @@
-//Las funciones de flecha en TypeScript nos permiten escribir funciones de manera más concisa y clara,
+//Las funciones de flecha en TypeScript nos permiten escribir funciones de manera 
+// más concisa y clara,
 // utilizando una sintaxis más corta que las funciones tradicionales.
 // Explicación: 
 // 1. Función de Flecha Básica: Se define una función de flecha que recibe dos parámetros y devuelve su suma.

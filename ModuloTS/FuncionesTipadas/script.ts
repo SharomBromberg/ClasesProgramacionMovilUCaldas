@@ -1,12 +1,16 @@
-//Las funciones tipadas en TypeScript nos permiten definir los tipos de datos que una función puede recibir como argumentos y el tipo de dato que devuelve,
+//Las funciones tipadas en TypeScript nos permiten definir los tipos de datos que una función 
+// puede recibir como argumentos y el tipo de dato que devuelve,
 // lo que ayuda a prevenir errores y mejorar la legibilidad del código.
 //Explicación:
-// 1. Función con Tipos Específicos: Se define una función que recibe dos parámetros de tipo number y devuelve un valor de tipo number.
+// 1. Función con Tipos Específicos: Se define una función que recibe dos parámetros de tipo number y 
+// devuelve un valor de tipo number.
 function sumar(a: number, b: number): number {
     return a + b;
 }
 let resultado: number = sumar(5, 10); // resultado es de tipo number y vale 15
-// 2. Función con Parámetros Opcionales: Se muestra cómo definir un parámetro opcional en una función utilizando el símbolo ?. 
+console.log(resultado);
+// 2. Función con Parámetros Opcionales: Se muestra cómo definir un parámetro opcional en 
+// una función utilizando el símbolo ?. 
 function saludar(nombre: string, saludo?: string): string {
     if (saludo) {
         return `${saludo}, ${nombre}!`;
@@ -14,6 +18,17 @@ function saludar(nombre: string, saludo?: string): string {
         return `Hola, ${nombre}!`;
     }
 }
+
+function activarUsuario(usuarioId: number, esActivo: boolean): string {
+    return `Usuario con ID ${usuarioId} está ${esActivo ? 'activo' : 'inactivo'}.`;
+}
+
+let estadoUsuario: string = activarUsuario(123, false); // estadoUsuario es "Usuario con ID 123 está activo."
+console.log(estadoUsuario);
+
+let estadoUsuario2: string = activarUsuario(456, false); // estadoUsuario2 es "Usuario con ID 456 está inactivo."
+console.log(estadoUsuario2);
+
 let mensaje1: string = saludar("Ana"); // mensaje1 es "Hola, Ana!"
 console.log(mensaje1);
 let mensaje2: string = saludar("Ana", "Buenos días"); // mensaje2 es "Buenos días, Ana!"
