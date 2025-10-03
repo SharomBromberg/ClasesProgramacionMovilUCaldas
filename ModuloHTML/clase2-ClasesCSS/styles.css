@@ -1,0 +1,52 @@
+body {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	margin: 0;
+}
+
+.caja {
+	display: flex;
+	width: 128px;
+	height: 128px;
+	background-color: rgb(82, 3, 142);
+	border-radius: 16px;
+	border: 8px solid #000000;
+	padding: 16px;
+	margin: 0 auto;
+}
+
+h2 {
+	color: white;
+	text-align: center;
+}
+
+.contenedor {
+	display: flex;
+	justify-content: center;
+	margin-top: 48px;
+}
+
+header {
+	display: flex;
+	flex-direction: column;
+	place-content: center;
+	height: 68px;
+	background-color: rgb(3, 94, 67);
+	border: solid 4px #000000;
+	border-radius: 16px;
+	margin-bottom: 32px;
+}
+
+a {
+	color: white;
+	text-decoration: none;
+	font-weight: bold;
+	font-size: 32px;
+	margin: 12px;
+}
+
+.navitems {
+	margin-left: 60%;
+	gap: 32px;
+}
