@@ -6,3 +6,4 @@ tsc --init
 Creamos tsconfig.json
 
 npm i -g nodemon
+npm i -g ts-node
